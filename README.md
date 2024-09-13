@@ -3,6 +3,7 @@
 Este repositório contém o código-fonte do Sistema de Gestão de Projetos, desenvolvido como parte do projeto final da Academia Atos. O sistema tem como objetivo permitir que equipes colaborem de forma organizada, acompanhem o progresso das tarefas e projetos, e obtenham relatórios de desempenho.
 
 #Arquitetura do Projeto
+
 O projeto é dividido em duas partes principais:
 
 #Front-end (ASP.NET Web Forms):
@@ -18,6 +19,7 @@ Gerencia operações CRUD (Create, Read, Update, Delete) para Projetos, Tarefas 
 Utiliza ADO.NET para comunicação com o banco de dados SQL Server.
 
 #Tecnologias Utilizadas
+
 C#
 ASP.NET Web Forms (Front-end)
 ASP.NET Web API (Back-end)
