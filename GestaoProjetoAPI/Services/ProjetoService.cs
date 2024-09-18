@@ -16,22 +16,28 @@ namespace GestaoProjetoAPI.Services
             _projetoRepository = new ProjetoRepository();
         }
 
-        public void AdicionarProjeto(ProjetoModels projeto)
+        public void Adicionar(ProjetoModels projeto)
         {
             _projetoRepository.Adicionar(projeto);
         }
 
-        public ProjetoModels ObterProjetoPorId(int id)
+        public ProjetoModels BuscarPorId(int id)
         {
             return _projetoRepository.BuscarPorId(id);
         }
 
-        public void AtualizarProjeto(ProjetoModels projeto)
+        public ProjetoModels BuscarPorNome(string nome)
+        {
+            return _projetoRepository.BuscarPorNome(nome);
+        }
+
+
+        public void Atualizar(ProjetoModels projeto)
         {
             _projetoRepository.Atualizar(projeto);
         }
 
-        public void ExcluirProjeto(int id)
+        public void Excluir(int id)
         {
             _projetoRepository.Excluir(id);
         }

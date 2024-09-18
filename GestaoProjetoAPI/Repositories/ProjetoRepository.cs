@@ -132,6 +132,52 @@ namespace GestaoProjetoAPI.Repositories
 
             return projeto;
         }
+        public ProjetoModels BuscarPorNome(string nome)
+        {
+            ProjetoModels projeto = null;
+            string sql = "SELECT * FROM dbo.Projetos WHERE Nome = @nome";
+
+            using (SqlConnection connection = ConfigConexao.GetSqlConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(sql, connection);
+                    command.Parameters.Add(new SqlParameter("@nome", nome));
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            projeto = new ProjetoModels
+                            {
+                                ProjetoId = reader.GetInt32(reader.GetOrdinal("ProjetoId")),
+                                Nome = reader.GetString(reader.GetOrdinal("Nome")),
+                                Descricao = reader.GetString(reader.GetOrdinal("Descricao")),
+                                DataInicio = reader.GetDateTime(reader.GetOrdinal("DataInicio")),
+                                DataFim = reader.IsDBNull(reader.GetOrdinal("DataFim")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("DataFim")),
+                                StatusProjeto = reader.GetString(reader.GetOrdinal("StatusProjeto")),
+                                EquipeId = reader.GetInt32(reader.GetOrdinal("EquipeId"))
+                            };
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Erro ao buscar projeto por Nome: " + sql);
+                    Console.WriteLine("Parâmetros:");
+                    Console.WriteLine($"@nome = {nome}");
+                    Console.WriteLine("Mensagem de erro: " + ex.Message);
+                    Console.WriteLine("Stack Trace: " + ex.StackTrace);
+                    throw new Exception("Erro ao buscar projeto por ID", ex);
+                }
+            }
+
+            return projeto;
+        }
+
+
+
 
         public void Atualizar(ProjetoModels projeto)
         {

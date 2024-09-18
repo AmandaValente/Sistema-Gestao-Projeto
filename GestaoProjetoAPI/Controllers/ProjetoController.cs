@@ -35,13 +35,41 @@ namespace GestaoProjetoAPI.Controllers
         {
             try
             {
-                _projetoRepository.BuscarPorId(id);
-                return Ok($"O projeto é {id}");
+                var projeto = _projetoRepository.BuscarPorId(id);
+
+                if (projeto == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(projeto); 
             }
             catch (Exception ex)
             {
-                
-                return BadRequest( $"Erro ao buscar projeto: {ex.Message}");
+                return BadRequest($"Erro ao buscar projeto: {ex.Message}");
+            }
+
+        }
+
+        [HttpGet]
+        [Route("nome/{nome}")]
+        public IHttpActionResult BuscarPorNome(string nome)
+        {
+            try
+            {
+                var projeto = _projetoRepository.BuscarPorNome(nome);
+
+                if (projeto == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(projeto);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest($"Erro ao buscar projeto: {ex.Message}");
             }
 
         }
