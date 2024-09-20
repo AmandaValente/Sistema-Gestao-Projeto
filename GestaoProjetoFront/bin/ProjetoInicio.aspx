@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProjetoInicio.aspx.cs" Inherits="GestaoProjetoFront.Views.Projetos.ProjetoInicio" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <script type="text/javascript">
+        function confirmarExclusao() {
+            return confirm('Você realmente deseja excluir este projeto?');
+        }
+    </script>
   
         <div class="container">
             <div>
@@ -28,7 +34,8 @@
                                 CommandArgument='<%# Eval("ProjetoId") %>' />
                             <asp:Button ID="btnExcluir" runat="server" ToolTip="Excluir" Text="Excluir" CssClass="btn btn-danger"
                                 CausesValidation="false" CommandName="excluir" OnClick="BtnExcluir_Click"
-                                CommandArgument='<%# Eval("ProjetoId") %>' />
+                               CommandArgument='<%# Eval("ProjetoId") %>' OnClientClick="return confirmarExclusao();" />
+
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:BoundField DataField="ProjetoId" HeaderText="ID" />

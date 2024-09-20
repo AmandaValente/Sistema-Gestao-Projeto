@@ -1,11 +1,9 @@
-﻿using System;
+﻿using GestaoProjetoFront.Models;
+using GestaoProjetoFront.Service;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using GestaoProjetoFront.Models;
-using GestaoProjetoFront.Service;
 
 namespace GestaoProjetoFront.Views.Projetos
 {
@@ -16,22 +14,7 @@ namespace GestaoProjetoFront.Views.Projetos
         private readonly ProjetoService _projetoService = new ProjetoService();
         protected void Page_Load(object sender, EventArgs e)
         {
-           /* if (!IsPostBack)
-            {
-                try
-                {
-                    ProjetoService projetoService = new ProjetoService();
-                    var projetos = projetoService.ListarProjetos();
-                    
-                    gvProjeto.DataSource = projetos; // Exibir a lista de projetos em um controle, como um GridView
-                    gvProjeto.DataBind();
-                }
-                catch (Exception ex)
-                {
-                    // Tratar o erro e exibir uma mensagem ao usuário
-                    Response.Write($"Erro: {ex.Message}");
-                }
-            }*/
+           
         }
 
         protected void BtnPesquisar_Click(object sender, EventArgs e)
@@ -64,25 +47,25 @@ namespace GestaoProjetoFront.Views.Projetos
         protected void BtnNovo_Click(object sender, EventArgs e)
         {
             // Navegar para a página de cadastro de novo projeto
-            Response.Redirect("CadastroProjeto.aspx");
+            Response.Redirect("ProjetoNovo.aspx");
         }
 
         protected void BtnAtualizar_Click(object sender, EventArgs e)
         {
-            // Obter o ID do projeto a partir do CommandArgument
+            // Obtem o ID do projeto a partir do CommandArgument
             Button btn = (Button)sender;
             string projetoId = btn.CommandArgument;
-            // Navegar para a página de edição do projeto
+            // Navega para a página de edição do projeto
             Response.Redirect($"ProjetoAtualiza.aspx?ProjetoId={projetoId}");
         }
 
         protected void BtnExcluir_Click(object sender, EventArgs e)
         {
-            // Obter o ID do projeto a partir do CommandArgument
+            // Obtem o ID do projeto a partir do CommandArgument
             Button btnExcluir = (Button)sender;
             int projetoId = Convert.ToInt32(btnExcluir.CommandArgument);
 
-            // Confirmar exclusão
+           
             if (ConfirmarExclusao())
             {
                 try
@@ -114,7 +97,7 @@ namespace GestaoProjetoFront.Views.Projetos
         private bool ConfirmarExclusao()
         {
 
-            return true; // Retornar true se confirmado
+            return true; 
         }
 
         private void MostrarMensagem(string mensagem)

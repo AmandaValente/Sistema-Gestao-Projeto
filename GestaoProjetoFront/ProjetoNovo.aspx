@@ -1,13 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProjetoAtualiza.aspx.cs" Inherits="GestaoProjetoFront.ProjetoAtualiza" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProjetoNovo.aspx.cs" Inherits="GestaoProjetoFront.ProjetoNovo" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Atualizar Projeto</title>
+    <title>Cadastrar Novo Projeto</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -15,13 +15,10 @@
 
         <div class="container">
             <div>
-                <h2>Atualizar Projeto</h2>
+                <h2>Cadastrar Novo Projeto</h2>
             </div>
 
-                <asp:HiddenField ID="idprojeto" runat="server" Value= />
-
             <div class="form-group">
-
                 <label for="txtNome">Nome:</label>
                 <asp:TextBox ID="txtNome" runat="server" CssClass="form-control" />
             </div>
@@ -32,7 +29,6 @@
             </div>
 
             <div class="form-group">
-
                 <div class="row">
                     <div class="col-md-6">
                         <label for="txtEquipeId">Equipe ID:</label>
@@ -49,7 +45,6 @@
             </div>
 
             <div class="form-group">
-
                 <div class="row">
                     <div class="col-md-6">
                         <label for="txtDataInicio">Data de Início:</label>
@@ -63,14 +58,13 @@
                     </div>
                 </div>
             </div>
+
             <div class="form-group">
-                <asp:Button ID="btnSalvar" runat="server" CssClass="btn btn-primary" Text="Salvar" OnClick="btnSalvar_Click" />
+                <asp:Button ID="btnSalvar" runat="server" CssClass="btn btn-primary" Text="Cadastrar" OnClick="btnSalvar_Click" />
             </div>
         </div>
     </form>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
 </body>
 </html>

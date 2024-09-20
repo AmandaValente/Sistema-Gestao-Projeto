@@ -5,73 +5,72 @@ using System.Collections.Generic;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GestaoProjetoFront.Views.Projetos
-{
-    public partial class ProjetoInicio : System.Web.UI.Page
-    {
-        private readonly string _apiUrl = "https://localhost:44318/api/v1/projeto";
 
-        private readonly ProjetoService _projetoService = new ProjetoService();
+namespace GestaoProjetoFront
+{
+    public partial class EquipesInicio : System.Web.UI.Page
+    {
+        private readonly string _apiUrl = "https://localhost:44318/api/v1/equipes";
+
+        private readonly EquipeService _equipeService = new EquipeService();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-        }
 
+        }
         protected void BtnPesquisar_Click(object sender, EventArgs e)
         {
             string idText = txtId.Text.Trim();
             string nome = txtNome.Text.Trim();
 
-            List<ProjetoModels> projetos = new List<ProjetoModels>();
+            List<EquipeModels> equipe = new List<EquipeModels>();
 
             // Verificar se o ID foi fornecido
             if (int.TryParse(idText, out int id))
             {
-                ProjetoModels projeto = _projetoService.BuscarPorId(id);
-                projetos = projeto != null ? new List<ProjetoModels> { projeto } : new List<ProjetoModels>();
+                EquipeModels equipes = _equipeService.BuscarPorId(id);
+                equipe = equipe != null ? new List<EquipeModels> { equipes } : new List<EquipeModels>();
             }
             else if (!string.IsNullOrEmpty(nome))
             {
-                var projeto = _projetoService.BuscarPorNome(nome);
-                projetos = projeto != null ? new List<ProjetoModels> { projeto } : new List<ProjetoModels>();
+                var equipes = _equipeService.BuscarPorNome(nome);
+                equipe = equipe != null ? new List<EquipeModels> { equipes } : new List<EquipeModels>();
             }
             else
             {
-                projetos = _projetoService.ListarProjetos();
+                equipe = _equipeService.ListarEquipes();
             }
 
-            gvProjeto.DataSource = projetos;
-            gvProjeto.DataBind();
+            gvEquipe.DataSource = equipe;
+            gvEquipe.DataBind();
         }
 
         protected void BtnNovo_Click(object sender, EventArgs e)
         {
-            // Navegar para a página de cadastro de novo projeto
-            Response.Redirect("ProjetoNovo.aspx");
+            Response.Redirect("EquipeNovo.aspx");
         }
 
         protected void BtnAtualizar_Click(object sender, EventArgs e)
         {
-            // Obtem o ID do projeto a partir do CommandArgument
-            Button btn = (Button)sender;
-            string projetoId = btn.CommandArgument;
-            // Navega para a página de edição do projeto
-            Response.Redirect($"ProjetoAtualiza.aspx?ProjetoId={projetoId}");
+            int equipeId = int.Parse((sender as Button).CommandArgument);
+
+            Response.Redirect($"EquipeAtualiza.aspx?equipeId={equipeId}");
         }
+
 
         protected void BtnExcluir_Click(object sender, EventArgs e)
         {
             // Obtem o ID do projeto a partir do CommandArgument
             Button btnExcluir = (Button)sender;
-            int projetoId = Convert.ToInt32(btnExcluir.CommandArgument);
+            int equipeId = Convert.ToInt32(btnExcluir.CommandArgument);
 
-           
+
             if (ConfirmarExclusao())
             {
                 try
                 {
-                    _projetoService.Deletar(projetoId);
-                    CarregarProjetos(); // Recarregar a GridView após exclusão
+                    _equipeService.Deletar(equipeId);
+                    CarregarEquipes(); // Recarregar a GridView após exclusão
                 }
                 catch (Exception ex)
                 {
@@ -80,13 +79,13 @@ namespace GestaoProjetoFront.Views.Projetos
             }
         }
 
-        private void CarregarProjetos()
+        private void CarregarEquipes()
         {
             try
             {
-                List<ProjetoModels> projetos = _projetoService.ListarProjetos();
-                gvProjeto.DataSource = projetos;
-                gvProjeto.DataBind();
+                List<EquipeModels> equipe = _equipeService.ListarEquipes();
+                gvEquipe.DataSource = equipe;
+                gvEquipe.DataBind();
             }
             catch (Exception ex)
             {
@@ -97,7 +96,7 @@ namespace GestaoProjetoFront.Views.Projetos
         private bool ConfirmarExclusao()
         {
 
-            return true; 
+            return true;
         }
 
         private void MostrarMensagem(string mensagem)
@@ -107,3 +106,4 @@ namespace GestaoProjetoFront.Views.Projetos
         }
     }
 }
+

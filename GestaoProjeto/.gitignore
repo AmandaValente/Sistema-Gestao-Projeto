@@ -1,0 +1,23 @@
+# Ignorar pastas de configuração do Visual Studio
+.vs/
+bin/
+obj/
+
+# Ignorar arquivos temporários do Web Forms e API
+*.user
+*.suo
+*.log
+*.tmp
+*.tlog
+
+# Ignorar builds e pacotes
+*.exe
+*.dll
+*.pdb
+*.cache
+*.config
+
+# Ignorar pacotes NuGet
+packages/
+*.nupkg
+project.lock.json

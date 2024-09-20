@@ -1,5 +1,6 @@
 ﻿using GestaoProjetoAPI.Models;
 using GestaoProjetoAPI.Repositories;
+using System;
 using System.Linq;
 using System.Net;
 using System.Web.Http;
@@ -11,10 +12,12 @@ namespace GestaoProjetoAPI.Controllers
     public class EquipeController : ApiController
     {
         private readonly EquipeRepository _equipeRepository;
+        private readonly MembroEquipeRepository _membroEquipeRepository;
 
         public EquipeController()
         {
             _equipeRepository = new EquipeRepository();
+            _membroEquipeRepository = new MembroEquipeRepository();
         }
 
         // GET api/v1/equipes
@@ -36,10 +39,33 @@ namespace GestaoProjetoAPI.Controllers
         public IHttpActionResult BuscarPorId(int id)
         {
             var equipe = _equipeRepository.BuscarPorId(id);
+
             if (equipe != null)
                 return Ok(equipe);
 
             return NotFound();
+        }
+        [HttpGet]
+        [Route("nome/{nome}")]
+        public IHttpActionResult BuscarPorNome(string nome)
+        {
+            try
+            {
+                var equipe = _equipeRepository.BuscarPorNome(nome);
+
+                if (equipe == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(equipe);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest($"Erro ao buscar equipe: {ex.Message}");
+            }
+
         }
 
         // POST api/v1/equipes
@@ -75,6 +101,7 @@ namespace GestaoProjetoAPI.Controllers
             if (equipe == null)
                 return NotFound();
 
+            _membroEquipeRepository.ExcluirMembros(id);
             _equipeRepository.Excluir(id);
             return StatusCode(HttpStatusCode.NoContent);
         }

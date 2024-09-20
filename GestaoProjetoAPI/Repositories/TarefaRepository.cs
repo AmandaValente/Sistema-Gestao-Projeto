@@ -12,7 +12,7 @@ namespace GestaoProjetoAPI.Repositories
         public IList<TarefaModels> ListarTodos()
         {
             var tarefas = new List<TarefaModels>();
-            string sql = "SELECT * FROM Tarefas"; 
+            string sql = "SELECT * FROM Tarefas";
 
             using (SqlConnection connection = ConfigConexao.GetSqlConnection())
             {
@@ -214,5 +214,56 @@ namespace GestaoProjetoAPI.Repositories
                 }
             }
         }
+        public void ExcluirPorProjetoID(int id)
+        {
+            string sql = "DELETE FROM Tarefas WHERE ProjetoId = @ProjetoId";
+
+            using (SqlConnection connection = ConfigConexao.GetSqlConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(sql, connection);
+                    command.Parameters.Add(new SqlParameter("@ProjetoId", id));
+
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Erro ao excluir tarefa: " + sql);
+                    Console.WriteLine("Parâmetros:");
+                    Console.WriteLine($"@tarefaId = {id}");
+                    Console.WriteLine("Mensagem de erro: " + ex.Message);
+                    Console.WriteLine("Stack Trace: " + ex.StackTrace);
+                    throw new Exception("Erro ao excluir tarefa", ex);
+                }
+            }
+        }
+        public void ExcluirPorResponsavelID(int id)
+        {
+            string sql = "DELETE FROM Tarefas WHERE ResponsaveId = @ResponsavelId";
+
+            using (SqlConnection connection = ConfigConexao.GetSqlConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(sql, connection);
+                    command.Parameters.Add(new SqlParameter("@ResponsavelId", id));
+
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Erro ao excluir tarefa: " + sql);
+                    Console.WriteLine("Parâmetros:");
+                    Console.WriteLine($"@tarefaId = {id}");
+                    Console.WriteLine("Mensagem de erro: " + ex.Message);
+                    Console.WriteLine("Stack Trace: " + ex.StackTrace);
+                    throw new Exception("Erro ao excluir tarefa", ex);
+                }
+            }
+        }
     }
 }
+

@@ -83,7 +83,6 @@ namespace GestaoProjetoFront.Service
             }
             catch (Exception ex)
             {
-                // Adicione um log de erro aqui, se necessário
                 throw new Exception($"Erro ao adicionar projeto: {ex.Message}", ex);
             }
         }
@@ -103,7 +102,7 @@ namespace GestaoProjetoFront.Service
             }
             catch (Exception ex)
             {
-               
+
                 throw new Exception($"Erro ao atualizar projeto: {ex.Message}", ex);
             }
         }
@@ -121,7 +120,6 @@ namespace GestaoProjetoFront.Service
             }
             catch (Exception ex)
             {
-                // Adicione um log de erro aqui, se necessário
                 throw new Exception($"Erro ao deletar projeto: {ex.Message}", ex);
             }
         }

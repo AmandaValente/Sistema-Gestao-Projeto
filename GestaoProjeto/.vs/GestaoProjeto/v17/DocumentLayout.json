@@ -3,58 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjeto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\projetoatualiza.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\service\\projetoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\projetoatualiza.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\projetoinicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\repositories\\projetorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\controllers\\projetocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\projetoinicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\models\\projetomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\services\\projetoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\controllers\\equipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,234 +17,30 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         },
         {
           "DockedWidth": 149,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjetoAtualiza.aspx",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\ProjetoAtualiza.aspx",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\ProjetoAtualiza.aspx",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\ProjetoAtualiza.aspx",
-              "RelativeToolTip": "..\\GestaoProjetoFront\\ProjetoAtualiza.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-16T19:30:51.96Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProjetoAtualiza.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\ProjetoAtualiza.aspx.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\ProjetoAtualiza.aspx.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\ProjetoAtualiza.aspx.cs",
-              "RelativeToolTip": "..\\GestaoProjetoFront\\ProjetoAtualiza.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T19:50:21.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProjetoInicio.aspx",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\ProjetoInicio.aspx",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\ProjetoInicio.aspx",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\ProjetoInicio.aspx",
-              "RelativeToolTip": "..\\GestaoProjetoFront\\ProjetoInicio.aspx",
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Site.Master",
+              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Site.Master",
+              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Site.Master",
+              "RelativeToolTip": "..\\GestaoProjetoFront\\Site.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-15T20:42:09.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProjetoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\ProjetoRepository.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Repositories\\ProjetoRepository.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\ProjetoRepository.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Repositories\\ProjetoRepository.cs",
-              "ViewState": "AgIAALYAAAAAAAAAAAAuwNsAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T00:58:35.489Z",
+              "WhenOpened": "2024-09-20T02:17:51.502Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProjetoController.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Controllers\\ProjetoController.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Controllers\\ProjetoController.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Controllers\\ProjetoController.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Controllers\\ProjetoController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:41:56.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProjetoService.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\ProjetoService.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Service\\ProjetoService.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\ProjetoService.cs",
-              "RelativeToolTip": "..\\GestaoProjetoFront\\Service\\ProjetoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:29:25.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProjetoInicio.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\ProjetoInicio.aspx.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\ProjetoInicio.aspx.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\ProjetoInicio.aspx.cs",
-              "RelativeToolTip": "..\\GestaoProjetoFront\\ProjetoInicio.aspx.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAqwEsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:28:18.536Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProjetoModels.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Models\\ProjetoModels.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Models\\ProjetoModels.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Models\\ProjetoModels.cs",
-              "RelativeToolTip": "..\\GestaoProjetoFront\\Models\\ProjetoModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T20:02:17.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProjetoService.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Services\\ProjetoService.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Services\\ProjetoService.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Services\\ProjetoService.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Services\\ProjetoService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:44:26.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EquipeController.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Controllers\\EquipeController.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Controllers\\EquipeController.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Controllers\\EquipeController.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Controllers\\EquipeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T00:06:17.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Web.config",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Web.config",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Web.config",
-              "RelativeToolTip": "..\\GestaoProjetoFront\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-15T21:40:29.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "WebApiConfig.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\App_Start\\WebApiConfig.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\App_Start\\WebApiConfig.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\App_Start\\WebApiConfig.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\App_Start\\WebApiConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:54:35.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Web.config",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Web.config",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Web.config",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-15T21:53:46.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Global.asax.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Global.asax.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Global.asax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T00:56:38.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:55:30.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FilterConfig.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\App_Start\\FilterConfig.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\App_Start\\FilterConfig.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\App_Start\\FilterConfig.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\App_Start\\FilterConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:55:42.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BundleConfig.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\App_Start\\BundleConfig.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\App_Start\\BundleConfig.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\App_Start\\BundleConfig.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\App_Start\\BundleConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:55:45.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T21:55:56.12Z"
             }
           ]
         }

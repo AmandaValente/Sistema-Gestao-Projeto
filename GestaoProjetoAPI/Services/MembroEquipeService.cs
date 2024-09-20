@@ -35,5 +35,20 @@ namespace GestaoProjetoAPI.Services
         {
             _membroRepository.Excluir(id);
         }
+
+        public List<MembroEquipeModels> ListarPorEquipeId(int id)
+        {
+            try
+            {
+                var membrosIList = _membroRepository.ListarPorEquipeId(id);
+
+                return membrosIList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao listar membros da equipe com ID {id}: {ex.Message}", ex);
+            }
+        }
     }
+
 }

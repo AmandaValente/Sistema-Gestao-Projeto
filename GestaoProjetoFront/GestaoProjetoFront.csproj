@@ -167,9 +167,12 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="EquipeAtualiza.aspx" />
+    <Content Include="EquipesInicio.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ProjetoAtualiza.aspx" />
+    <Content Include="ProjetoNovo.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -258,9 +261,25 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EquipeAtualiza.aspx.cs">
+      <DependentUpon>EquipeAtualiza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipeAtualiza.aspx.designer.cs">
+      <DependentUpon>EquipeAtualiza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipesInicio.aspx.cs">
+      <DependentUpon>EquipesInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipesInicio.aspx.designer.cs">
+      <DependentUpon>EquipesInicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EquipeModels.cs" />
+    <Compile Include="Models\MembroEquipeModels.cs" />
     <Compile Include="Models\ProjetoModels.cs" />
     <Compile Include="ProjetoAtualiza.aspx.cs">
       <DependentUpon>ProjetoAtualiza.aspx</DependentUpon>
@@ -269,7 +288,16 @@
     <Compile Include="ProjetoAtualiza.aspx.designer.cs">
       <DependentUpon>ProjetoAtualiza.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProjetoNovo.aspx.cs">
+      <DependentUpon>ProjetoNovo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjetoNovo.aspx.designer.cs">
+      <DependentUpon>ProjetoNovo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\EquipeService.cs" />
+    <Compile Include="Service\MembroEquipeService.cs" />
     <Compile Include="Service\ProjetoService.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -294,8 +322,8 @@
     </Compile>
     <Compile Include="ProjetoInicio.aspx.cs">
       <DependentUpon>ProjetoInicio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ProjetoInicio.aspx.designer.cs">
       <DependentUpon>ProjetoInicio.aspx</DependentUpon>

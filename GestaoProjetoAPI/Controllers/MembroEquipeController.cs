@@ -2,7 +2,7 @@
 using GestaoProjetoAPI.Repositories;
 using System.Collections.Generic;
 using System.Web.Http;
-using GestaoProjetoAPI.Models;
+
 
 
 namespace GestaoProjetoAPI.Controllers
@@ -37,7 +37,7 @@ namespace GestaoProjetoAPI.Controllers
             return NotFound();
         }
 
-       
+
         [HttpPost]
         [Route("")]
         public IHttpActionResult AdicionarMembro([FromBody] MembroEquipeModels membro)
@@ -49,7 +49,7 @@ namespace GestaoProjetoAPI.Controllers
             return CreatedAtRoute("DefaultApi", new { id = membro.MembroId }, membro);
         }
 
-       
+
         [HttpPut]
         [Route("{id:int}")]
         public IHttpActionResult AtualizarMembro(int id, [FromBody] MembroEquipeModels membro)
@@ -65,7 +65,7 @@ namespace GestaoProjetoAPI.Controllers
             return StatusCode(System.Net.HttpStatusCode.NoContent);
         }
 
-        
+
         [HttpDelete]
         [Route("{id:int}")]
         public IHttpActionResult DeletarMembro(int id)
@@ -77,5 +77,19 @@ namespace GestaoProjetoAPI.Controllers
             _membroEquipeRepository.Excluir(id);
             return StatusCode(System.Net.HttpStatusCode.NoContent);
         }
+
+        [HttpGet]
+        [Route("equipe/{equipeId:int}")]
+        public IHttpActionResult ListarPorEquipeId(int equipeId)
+        {
+            var membros = _membroEquipeRepository.ListarPorEquipeId(equipeId);
+
+            if (membros == null || membros.Count == 0)
+                return NotFound();
+
+            return Ok(membros);
+        }
+
     }
 }
+

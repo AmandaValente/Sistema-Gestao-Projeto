@@ -1,9 +1,5 @@
 ﻿using GestaoProjetoAPI.Models;
 using GestaoProjetoAPI.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace GestaoProjetoAPI.Services
 {
@@ -24,6 +20,10 @@ namespace GestaoProjetoAPI.Services
         public EquipeModels ObterEquipePorId(int id)
         {
             return _equipeRepository.BuscarPorId(id);
+        }
+        public EquipeModels BuscarPorNome(string nome)
+        {
+            return _equipeRepository.BuscarPorNome(nome);
         }
 
         public void AtualizarEquipe(EquipeModels equipe)
