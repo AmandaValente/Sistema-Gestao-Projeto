@@ -114,6 +114,7 @@ namespace GestaoProjetoFront.Service
                    
                     var response = client.DeleteAsync($"{_apiUrlequipes }/{id}").Result;
                     response.EnsureSuccessStatusCode();
+                   
                 }
             }
             catch (Exception ex)

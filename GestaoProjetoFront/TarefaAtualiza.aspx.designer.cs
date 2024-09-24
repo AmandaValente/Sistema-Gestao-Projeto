@@ -11,17 +11,17 @@ namespace GestaoProjetoFront
 {
 
 
-    public partial class ProjetoAtualiza
+    public partial class TarefaAtualiza
     {
 
         /// <summary>
-        /// Controle idprojeto.
+        /// Controle idtarefa.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField idprojeto;
+        protected global::System.Web.UI.WebControls.HiddenField idtarefa;
 
         /// <summary>
         /// Controle txtNome.
@@ -42,22 +42,22 @@ namespace GestaoProjetoFront
         protected global::System.Web.UI.WebControls.TextBox txtDescricao;
 
         /// <summary>
-        /// Controle txtEquipeId.
+        /// Controle txtProjetoId.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEquipeId;
+        protected global::System.Web.UI.WebControls.TextBox txtProjetoId;
 
         /// <summary>
-        /// Controle ddlStatus.
+        /// Controle txtResponsavelId.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlStatus;
+        protected global::System.Web.UI.WebControls.TextBox txtResponsavelId;
 
         /// <summary>
         /// Controle txtDataInicio.
@@ -94,6 +94,24 @@ namespace GestaoProjetoFront
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::AjaxControlToolkit.CalendarExtender CalendarExtender1;
+
+        /// <summary>
+        /// Controle ddlStatus.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlStatus;
+
+        /// <summary>
+        /// Controle Prioridade.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Prioridade;
 
         /// <summary>
         /// Controle btnSalvar.

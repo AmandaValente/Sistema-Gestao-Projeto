@@ -11,8 +11,13 @@ namespace GestaoProjetoFront
     public partial class EquipesInicio : System.Web.UI.Page
     {
         private readonly string _apiUrl = "https://localhost:44318/api/v1/equipes";
+        private readonly string _apiUrlmembroequipe = "https://localhost:44318/api/v1/membroequipe";
+
+
 
         private readonly EquipeService _equipeService = new EquipeService();
+        private readonly MembroEquipeService _membroEquipeService = new MembroEquipeService();
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -52,23 +57,36 @@ namespace GestaoProjetoFront
 
         protected void BtnAtualizar_Click(object sender, EventArgs e)
         {
-            int equipeId = int.Parse((sender as Button).CommandArgument);
+            try
+            {
+                int equipeId = int.Parse((sender as Button).CommandArgument);
+                var membros = _membroEquipeService.ListarPorEquipeId(equipeId);
 
-            Response.Redirect($"EquipeAtualiza.aspx?equipeId={equipeId}");
+                if (membros == null || membros.Count == 0)
+                {
+                    MostrarMensagem("A equipe não possui membros cadastrados.");
+                }
+
+                
+                Response.Redirect($"EquipeAtualiza.aspx?EquipeId={equipeId}");
+            }
+            catch (Exception ex)
+            {
+                MostrarMensagem($"Erro ao processar a atualização: {ex.Message}");
+            }
         }
 
 
         protected void BtnExcluir_Click(object sender, EventArgs e)
         {
-            // Obtem o ID do projeto a partir do CommandArgument
             Button btnExcluir = (Button)sender;
             int equipeId = Convert.ToInt32(btnExcluir.CommandArgument);
-
 
             if (ConfirmarExclusao())
             {
                 try
                 {
+                    _membroEquipeService.DeletarPorEquipeID(equipeId);
                     _equipeService.Deletar(equipeId);
                     CarregarEquipes(); // Recarregar a GridView após exclusão
                 }

@@ -30,8 +30,9 @@ namespace GestaoProjetoAPI.Repositories
                                 TarefaId = reader.GetInt32(reader.GetOrdinal("TarefaId")),
                                 Nome = reader.GetString(reader.GetOrdinal("Nome")),
                                 Descricao = reader.GetString(reader.GetOrdinal("Descricao")),
-                                DataCriacao = reader.GetDateTime(reader.GetOrdinal("DataInicio")),
-                                DataConclusao = reader.IsDBNull(reader.GetOrdinal("DataFim")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("DataFim")),
+                                DataCriacao = reader.GetDateTime(reader.GetOrdinal("DataCriacao")),
+                                DataConclusao = reader.IsDBNull(reader.GetOrdinal("DataConclusao")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("DataConclusao")),
+                                Prioridade = reader.GetString(reader.GetOrdinal("Prioridade")),
                                 StatusTarefa = reader.GetString(reader.GetOrdinal("StatusTarefa")),
                                 ProjetoId = reader.GetInt32(reader.GetOrdinal("ProjetoId"))
                             };

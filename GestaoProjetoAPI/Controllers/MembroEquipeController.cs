@@ -42,11 +42,8 @@ namespace GestaoProjetoAPI.Controllers
         [Route("")]
         public IHttpActionResult AdicionarMembro([FromBody] MembroEquipeModels membro)
         {
-            if (membro == null)
-                return BadRequest("O membro não pode ser nulo.");
-
             _membroEquipeRepository.Adicionar(membro);
-            return CreatedAtRoute("DefaultApi", new { id = membro.MembroId }, membro);
+            return Ok(membro);
         }
 
 
@@ -77,15 +74,23 @@ namespace GestaoProjetoAPI.Controllers
             _membroEquipeRepository.Excluir(id);
             return StatusCode(System.Net.HttpStatusCode.NoContent);
         }
+        [HttpDelete]
+        [Route("busca/{equipeid:int}")]
+        public IHttpActionResult DeletarPorEdquipeId(int equipeid)
+        {
+            var membro = _membroEquipeRepository.BuscarPorEquipeId( equipeid);
+            if (membro == null)
+                return NotFound();
+
+            _membroEquipeRepository.ExcluirMembros(equipeid);
+            return StatusCode(System.Net.HttpStatusCode.NoContent);
+        }
 
         [HttpGet]
         [Route("equipe/{equipeId:int}")]
         public IHttpActionResult ListarPorEquipeId(int equipeId)
         {
             var membros = _membroEquipeRepository.ListarPorEquipeId(equipeId);
-
-            if (membros == null || membros.Count == 0)
-                return NotFound();
 
             return Ok(membros);
         }

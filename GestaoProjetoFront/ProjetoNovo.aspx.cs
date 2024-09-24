@@ -11,7 +11,7 @@ namespace GestaoProjetoFront
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Se precisar fazer algo ao carregar a página, faça aqui
+           
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)

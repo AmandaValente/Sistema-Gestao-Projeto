@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProjetoInicio.aspx.cs" Inherits="GestaoProjetoFront.Views.Projetos.ProjetoInicio" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <script type="text/javascript">
@@ -10,7 +11,7 @@
   
         <div class="container">
             <div>
-                <h1>Pesquisar Projeto</h1>
+                <h1>Gerenciar Projeto</h1>
             </div>
             <div class="form-group">
                 <label for="txtId">ID:</label>
@@ -31,7 +32,7 @@
                         <ItemTemplate>
                             <asp:Button ID="btnAtualizar" runat="server" ToolTip="Atualizar" Text="Atualizar" CssClass="btn btn-primary"
                                 CausesValidation="false" CommandName="atualizar" OnClick="BtnAtualizar_Click"
-                                CommandArgument='<%# Eval("ProjetoId") %>' />
+                                CommandArgument='<%# Eval("ProjetoId") %>' PostBackUrl='<%# "ProjetoAtualiza.aspx?ProjetoId=" + Eval("ProjetoId") %>' />
                             <asp:Button ID="btnExcluir" runat="server" ToolTip="Excluir" Text="Excluir" CssClass="btn btn-danger"
                                 CausesValidation="false" CommandName="excluir" OnClick="BtnExcluir_Click"
                                CommandArgument='<%# Eval("ProjetoId") %>' OnClientClick="return confirmarExclusao();" />

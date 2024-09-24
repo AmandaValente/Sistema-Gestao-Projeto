@@ -1,5 +1,6 @@
 ﻿using GestaoProjetoAPI.Models;
 using GestaoProjetoAPI.Repositories;
+using System;
 using System.Linq;
 using System.Web.Http;
 
@@ -14,7 +15,7 @@ namespace GestaoProjetoAPI.Controllers
 
             public TarefaController()
             {
-                _tarefaRepository = new TarefaRepository(); 
+                _tarefaRepository = new TarefaRepository();
             }
 
             // GET api/v1/tarefa
@@ -46,11 +47,8 @@ namespace GestaoProjetoAPI.Controllers
             [Route("")]
             public IHttpActionResult AdicionarTarefa([FromBody] TarefaModels tarefa)
             {
-                if (tarefa == null)
-                    return BadRequest("Tarefa inválida.");
-
                 _tarefaRepository.Adicionar(tarefa);
-                return CreatedAtRoute(nameof(BuscarPorId), new { id = tarefa.TarefaId }, tarefa);
+                return Ok(tarefa);
             }
 
             // PUT api/v1/tarefa/{id}
@@ -58,11 +56,17 @@ namespace GestaoProjetoAPI.Controllers
             [Route("{id:int}")]
             public IHttpActionResult AtualizarTarefa(int id, [FromBody] TarefaModels tarefa)
             {
-                if (id != tarefa.TarefaId || tarefa == null)
-                    return BadRequest("Dados da tarefa inválidos.");
+                try
+                {
+                    _tarefaRepository.Atualizar(tarefa);
+                    return Ok($"Tarefa atualizada com sucesso");
 
-                _tarefaRepository.Atualizar(tarefa);
-                return StatusCode(System.Net.HttpStatusCode.NoContent);
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest($"Erro ao atualizar o tarefa: {ex.Message}");
+                }
+
             }
 
             // DELETE api/v1/tarefa/{id}
@@ -70,12 +74,16 @@ namespace GestaoProjetoAPI.Controllers
             [Route("{id:int}")]
             public IHttpActionResult DeletarTarefa(int id)
             {
-                var tarefa = _tarefaRepository.BuscarPorId(id);
-                if (tarefa == null)
-                    return NotFound();
+                try
+                {
+                    _tarefaRepository.Excluir(id);
+                    return Ok($"Tarefa deletada com sucesso");
 
-                _tarefaRepository.Excluir(id);
-                return StatusCode(System.Net.HttpStatusCode.NoContent); 
+                }
+                catch
+                {
+                    return BadRequest($"Erro ao deletar tarefa com Id{id}");
+                }
             }
         }
     }

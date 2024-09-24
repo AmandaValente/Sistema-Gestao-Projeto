@@ -1,11 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using GestaoProjetoFront.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using GestaoProjetoFront.Models;
-using System.Net.Http;
 using System.Configuration;
+using System.Net.Http;
 
 namespace GestaoProjetoFront.Service
 {

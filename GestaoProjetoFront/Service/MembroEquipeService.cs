@@ -21,7 +21,7 @@ namespace GestaoProjetoFront.Service
             {
                 using (HttpClient client = new HttpClient())
                 {
-                   
+
                     var resposta = client.GetStringAsync(_apiUrlmembroequipe).Result;
                     return JsonConvert.DeserializeObject<List<MembroEquipeModels>>(resposta);
                 }
@@ -72,7 +72,7 @@ namespace GestaoProjetoFront.Service
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    // POST /api/v1/projeto
+
                     var jsonContent = JsonConvert.SerializeObject(membroEquipe);
                     var contentString = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
                     var response = client.PostAsync(_apiUrlmembroequipe, contentString).Result;
@@ -91,7 +91,7 @@ namespace GestaoProjetoFront.Service
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    
+
                     var jsonContent = JsonConvert.SerializeObject(membroEquipe);
                     var contentString = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
                     var response = client.PutAsync($"{_apiUrlmembroequipe}/{id}", contentString).Result;
@@ -113,6 +113,21 @@ namespace GestaoProjetoFront.Service
                 {
                     // DELETE /api/v1/projeto/{id}
                     var response = client.DeleteAsync($"{_apiUrlmembroequipe}/{id}").Result;
+                    response.EnsureSuccessStatusCode();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao deletar membro da equipe: {ex.Message}", ex);
+            }
+        }
+        public void DeletarPorEquipeID(int equipeid)
+        {
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    var response = client.DeleteAsync($"{_apiUrlmembroequipe}/busca/{equipeid}").Result;
                     response.EnsureSuccessStatusCode();
                 }
             }

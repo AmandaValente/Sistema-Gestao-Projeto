@@ -1,9 +1,7 @@
-﻿using System;
+﻿using GestaoProjetoAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using GestaoProjetoAPI.Models;
 namespace GestaoProjetoAPI.Repositories
 {
     public class MembroEquipeRepository
@@ -126,15 +124,15 @@ namespace GestaoProjetoAPI.Repositories
 
         public void ExcluirMembros(int equipeId)
         {
-            string sql = "DELETE FROM MembrosEquipe WHERE EquipeId = @equipeId";
+            string sql = "DELETE FROM MembrosEquipe WHERE EquipeId  = @EquipeId";
 
             using (var connection = ConfigConexao.GetSqlConnection())
             {
                 connection.Open();
                 using (var command = new SqlCommand(sql, connection))
                 {
-                    command.Parameters.AddWithValue("@equipeId", equipeId);
-                    command.ExecuteNonQuery(); // aqui ta dando conflito para excluir  pq existem tarefas no BD que estão atreladas a membros equipe
+                    command.Parameters.AddWithValue("@EquipeId", equipeId);
+                    command.ExecuteNonQuery(); 
 
                 }
             }
@@ -179,6 +177,34 @@ namespace GestaoProjetoAPI.Repositories
             }
 
             return membros;
+        }
+        public MembroEquipeModels BuscarPorEquipeId(int equipeid)
+        {
+            MembroEquipeModels membro = null;
+            string sql = "SELECT * FROM MembrosEquipe WHERE EquipeId = @EquipeId";
+
+            using (var connection = ConfigConexao.GetSqlConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@EquipeId", equipeid);
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            membro = new MembroEquipeModels
+                            {
+                                MembroId = reader.GetInt32(reader.GetOrdinal("MembroId")),
+                                Nome = reader.GetString(reader.GetOrdinal("Nome")),
+                                Email = reader.GetString(reader.GetOrdinal("Email")),
+                                EquipeId = reader.GetInt32(reader.GetOrdinal("EquipeId"))
+                            };
+                        }
+                    }
+                }
+            }
+            return membro;
         }
     }
 }

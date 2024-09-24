@@ -25,7 +25,7 @@ namespace GestaoProjetoAPI.Controllers
         [Route("")]
         public IHttpActionResult ListarTodas()
         {
-            
+
             var equipes = _equipeRepository.ListarTodas();
             if (equipes.Any())
                 return Ok(equipes);
@@ -73,11 +73,8 @@ namespace GestaoProjetoAPI.Controllers
         [Route("")]
         public IHttpActionResult Adicionar([FromBody] EquipeModels equipe)
         {
-            if (equipe == null)
-                return BadRequest("Equipe não pode ser nula.");
-
             _equipeRepository.Adicionar(equipe);
-            return CreatedAtRoute("DefaultApi", new { id = equipe.EquipeId }, equipe);
+            return Ok(equipe);
         }
 
         // PUT api/v1/equipes/{id}

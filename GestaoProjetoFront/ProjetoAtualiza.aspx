@@ -1,24 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProjetoAtualiza.aspx.cs" Inherits="GestaoProjetoFront.ProjetoAtualiza" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="ProjetoAtualiza.aspx.cs" Inherits="GestaoProjetoFront.ProjetoAtualiza" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Atualizar Projeto</title>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+       
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
-
-</head>
-<body>
-    <form id="form1" runat="server">
-        <asp:ScriptManager ID="ScriptManager1" runat="server" />
-
-        <div class="container">
+    
+    <div class="container">
             <div>
                 <h2>Atualizar Projeto</h2>
             </div>
 
-                <asp:HiddenField ID="idprojeto" runat="server" Value= />
+            <asp:HiddenField ID="idprojeto" runat="server" Value="" />
 
             <div class="form-group">
 
@@ -67,10 +60,10 @@
                 <asp:Button ID="btnSalvar" runat="server" CssClass="btn btn-primary" Text="Salvar" OnClick="btnSalvar_Click" />
             </div>
         </div>
-    </form>
+  
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
-</body>
-</html>
+
+</asp:Content>

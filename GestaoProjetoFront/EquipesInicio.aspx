@@ -10,7 +10,7 @@
   
         <div class="container">
             <div>
-                <h1>Pesquisar Equipe</h1>
+                <h1>Gerenciar Equipe</h1>
             </div>
             <div class="form-group">
                 <label for="txtId">ID Equipe:</label>
@@ -31,7 +31,7 @@
                         <ItemTemplate>
                             <asp:Button ID="btnAtualizar" runat="server" ToolTip="Atualizar" Text="Atualizar" CssClass="btn btn-primary"
                                 CausesValidation="false" CommandName="atualizar" OnClick="BtnAtualizar_Click"
-                                CommandArgument='<%# Eval("EquipeId") %>' />
+                                CommandArgument='<%# Eval("EquipeId") %>'/>
                             <asp:Button ID="btnExcluir" runat="server" ToolTip="Excluir" Text="Excluir" CssClass="btn btn-danger"
                                 CausesValidation="false" CommandName="excluir" OnClick="BtnExcluir_Click"
                                CommandArgument='<%# Eval("EquipeId") %>' OnClientClick="return confirmarExclusao();" />

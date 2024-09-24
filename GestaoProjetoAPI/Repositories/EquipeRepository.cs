@@ -93,7 +93,7 @@ namespace GestaoProjetoAPI.Repositories
         public EquipeModels BuscarPorNome(string nome)
         {
             EquipeModels equipe = null;
-            string sql = "SELECT * FROM dbo.equipes WHERE Nome LIKE @nome";
+            string sql = @"SELECT * FROM dbo.equipes WHERE Nome LIKE @nome";
 
             using (SqlConnection connection = ConfigConexao.GetSqlConnection())
             {
@@ -159,5 +159,6 @@ namespace GestaoProjetoAPI.Repositories
                 }
             }
         }
+
     }
 }

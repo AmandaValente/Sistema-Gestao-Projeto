@@ -62,8 +62,6 @@ namespace GestaoProjetoFront
             try
             {
                 string nome = txtNome.Text.Trim();
-
-
                 string idValue = idequipe.Value.Trim();
                 if (int.TryParse(idValue, out int equipeId))
 
@@ -75,6 +73,7 @@ namespace GestaoProjetoFront
                         Nome = nome,
 
                     };
+
 
                     _equipeService.Atualizar(equipeAtualizado, equipeId);
 
@@ -97,25 +96,25 @@ namespace GestaoProjetoFront
         protected void btnNovoMembro_Click(object sender, EventArgs e)
         {
            
-            Response.Redirect("CadastroMembro.aspx?EquipeId=" + idequipe.Value);
+            Response.Redirect("MembroNovo.aspx?EquipeId=" + idequipe.Value);
         }
 
 
         protected void btnExcluir_Click(object sender, EventArgs e)
         {
             int membroId = int.Parse((sender as Button).CommandArgument);
-            // Chame seu método de exclusão no serviço
+            
             _membroEquipeService.Deletar(membroId);
-            // Recarregar a lista de membros
-            CarregarMembros(int.Parse(idequipe.Value)); // Certifique-se de ter o ID da equipe
+           
+            CarregarMembros(int.Parse(idequipe.Value)); 
         }
         protected void btnAtualizar_Click(object sender, EventArgs e)
         {
-            // Aqui você pega o ID do membro
+            
             Button btn = (Button)sender;
             int membroId = Convert.ToInt32(btn.CommandArgument);
 
-            // Agora redireciona para a página de atualização de membros, passando o ID do membro na query string
+            
             Response.Redirect($"MembroAtualiza.aspx?membroId={membroId}");
         }
 

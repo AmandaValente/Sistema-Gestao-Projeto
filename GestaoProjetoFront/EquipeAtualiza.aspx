@@ -22,7 +22,7 @@
         </div>
 
         <div>
-
+            
             <!-- GridView para exibir os membros da equipe selecionada -->
             <h4>Membros Cadastrados:</h4>
             <asp:GridView ID="gvMembros" runat="server" AutoGenerateColumns="False" Width="100%"
@@ -36,7 +36,8 @@
                         <ItemTemplate>
                             <asp:Button ID="btnAtualizar" runat="server" Text="Atualizar"
                                 CssClass="btn btn-warning" OnClick="btnAtualizar_Click"
-                                CommandArgument='<%# Eval("MembroId") %>' />
+                                CommandArgument='<%# Eval("MembroId") %>' PostBackUrl='<%# "MembroAtualiza.aspx?MembroId=" + Eval("MembroId") %>' />
+
                             <asp:Button ID="btnExcluir" runat="server" Text="Excluir"
                                 CssClass="btn btn-danger" OnClick="btnExcluir_Click"
                                 CommandArgument='<%# Eval("MembroId") %>'
@@ -47,7 +48,7 @@
             </asp:GridView>
 
             <div class="form-group">
-                <asp:Button ID="btnNovoMembro" runat="server" CssClass="btn btn-secondary" Text="Adicionar Novo Membro" OnClick="btnNovoMembro_Click" />
+                <asp:Button ID="btnNovoMembro" runat="server" CssClass="btn btn-secondary" Text="Adicionar Novo Membro" OnClick="btnNovoMembro_Click"/>
             </div>
         </div>
 
