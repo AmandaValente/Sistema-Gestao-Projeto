@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}"
 	ProjectSection(SolutionItems) = preProject
 		.Gitignore = .Gitignore
+		SqlQuery_1.sql = SqlQuery_1.sql
 	EndProjectSection
 EndProject
 Global

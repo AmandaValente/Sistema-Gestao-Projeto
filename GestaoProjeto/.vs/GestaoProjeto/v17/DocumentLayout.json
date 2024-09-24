@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjeto\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}|Itens de Solu\u00E7\u00E3o{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}|C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjeto\\SqlQuery_1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}|Itens de Solu\u00E7\u00E3o{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}|solutionrelative:SqlQuery_1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\service\\membroequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,6 +38,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\tarefaatualiza.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}|Itens de Solu\u00E7\u00E3o{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}|C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjeto\\SqlQuery_1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}|Itens de Solu\u00E7\u00E3o{C75A4B2A-AE3E-49A5-B09B-8E6312E25370}|solutionrelative:SqlQuery_1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,11 +65,23 @@
         },
         {
           "DockedWidth": 149,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "SqlQuery_1.sql ",
+              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjeto\\SqlQuery_1.sql",
+              "RelativeDocumentMoniker": "SqlQuery_1.sql",
+              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjeto\\SqlQuery_1.sql",
+              "RelativeToolTip": "SqlQuery_1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-24T02:33:52.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TarefaAtualiza.aspx.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\TarefaAtualiza.aspx.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\TarefaAtualiza.aspx.cs",
@@ -69,12 +89,11 @@
               "RelativeToolTip": "..\\GestaoProjetoFront\\TarefaAtualiza.aspx.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAcwF8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T18:57:19.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T18:57:19.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Site.Master",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Site.Master",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Site.Master",
@@ -82,12 +101,11 @@
               "RelativeToolTip": "..\\GestaoProjetoFront\\Site.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-24T00:58:47.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T00:58:47.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EquipesInicio.aspx.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\EquipesInicio.aspx.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\EquipesInicio.aspx.cs",
@@ -95,12 +113,11 @@
               "RelativeToolTip": "..\\GestaoProjetoFront\\EquipesInicio.aspx.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAgwEgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T19:57:52.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T19:57:52.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MembroEquipeController.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs",
@@ -108,12 +125,11 @@
               "RelativeToolTip": "..\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAAwF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T19:57:52.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T19:57:52.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MembroEquipeRepository.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\MembroEquipeRepository.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Repositories\\MembroEquipeRepository.cs",
@@ -121,12 +137,11 @@
               "RelativeToolTip": "..\\GestaoProjetoAPI\\Repositories\\MembroEquipeRepository.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAcwI4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T00:34:58.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T00:34:58.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MembroEquipeService.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\MembroEquipeService.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Service\\MembroEquipeService.cs",
@@ -139,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EquipeRepository.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
@@ -147,12 +162,11 @@
               "RelativeToolTip": "..\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T01:50:30.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T01:50:30.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EquipeService.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\EquipeService.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Service\\EquipeService.cs",
@@ -160,12 +174,11 @@
               "RelativeToolTip": "..\\GestaoProjetoFront\\Service\\EquipeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T01:51:11.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T01:51:11.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "TarefasInicio.aspx.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\TarefasInicio.aspx.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\TarefasInicio.aspx.cs",
@@ -173,12 +186,11 @@
               "RelativeToolTip": "..\\GestaoProjetoFront\\TarefasInicio.aspx.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T20:03:13.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T20:03:13.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TarefaRepository.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\TarefaRepository.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Repositories\\TarefaRepository.cs",
@@ -186,12 +198,11 @@
               "RelativeToolTip": "..\\GestaoProjetoAPI\\Repositories\\TarefaRepository.cs",
               "ViewState": "AgIAALEAAAAAAAAAAAAcwL8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T20:09:20.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T20:09:20.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TarefaAtualiza.aspx",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\TarefaAtualiza.aspx",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\TarefaAtualiza.aspx",
@@ -199,8 +210,7 @@
               "RelativeToolTip": "..\\GestaoProjetoFront\\TarefaAtualiza.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-23T19:17:08.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T19:17:08.977Z"
             }
           ]
         }

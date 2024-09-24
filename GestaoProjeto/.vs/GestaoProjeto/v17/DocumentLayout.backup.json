@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjeto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\controllers\\membroequipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\service\\membroequipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\equipesinicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65DDC28A-CCBF-4AF2-9F5A-CE77408BEB9D}|..\\GestaoProjetoFront\\GestaoProjetoFront.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetofront\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\controllers\\membroequipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2840CC4-EF3F-4D01-B97D-58E78639ADBF}|..\\GestaoProjetoAPI\\GestaoProjetoAPI.csproj|c:\\users\\amand\\documents\\academiaatos\\projetofinal\\gestaoprojetoapi\\repositories\\equiperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -57,34 +57,8 @@
         },
         {
           "DockedWidth": 149,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EquipeService.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\EquipeService.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Service\\EquipeService.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\EquipeService.cs",
-              "RelativeToolTip": "..\\GestaoProjetoFront\\Service\\EquipeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T01:51:11.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EquipeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
-              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T01:50:30.451Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
@@ -100,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Site.Master",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Site.Master",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Site.Master",
@@ -113,25 +87,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "EquipesInicio.aspx.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\EquipesInicio.aspx.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\EquipesInicio.aspx.cs",
               "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\EquipesInicio.aspx.cs",
               "RelativeToolTip": "..\\GestaoProjetoFront\\EquipesInicio.aspx.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwEUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwEgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T19:57:52.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MembroEquipeController.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs",
-              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs*",
-              "RelativeToolTip": "..\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs*",
+              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs",
+              "RelativeToolTip": "..\\GestaoProjetoAPI\\Controllers\\MembroEquipeController.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAAwF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T19:57:52.764Z",
@@ -152,15 +126,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MembroEquipeService.cs",
               "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\MembroEquipeService.cs",
               "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Service\\MembroEquipeService.cs",
               "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\MembroEquipeService.cs",
               "RelativeToolTip": "..\\GestaoProjetoFront\\Service\\MembroEquipeService.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAUwIwAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAUwIsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T19:57:52.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EquipeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
+              "RelativeDocumentMoniker": "..\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
+              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
+              "RelativeToolTip": "..\\GestaoProjetoAPI\\Repositories\\EquipeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T01:50:30.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EquipeService.cs",
+              "DocumentMoniker": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\EquipeService.cs",
+              "RelativeDocumentMoniker": "..\\GestaoProjetoFront\\Service\\EquipeService.cs",
+              "ToolTip": "C:\\Users\\amand\\Documents\\AcademiaAtos\\ProjetoFinal\\GestaoProjetoFront\\Service\\EquipeService.cs",
+              "RelativeToolTip": "..\\GestaoProjetoFront\\Service\\EquipeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T01:51:11.322Z",
               "EditorCaption": ""
             },
             {
