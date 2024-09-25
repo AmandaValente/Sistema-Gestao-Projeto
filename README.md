@@ -25,4 +25,7 @@ ASP.NET Web Forms (Front-end)
 ASP.NET Web API (Back-end)
 ADO.NET (para acesso ao banco de dados)
 SQL Server (Banco de dados)
+
+#Trello 
+https://trello.com/b/eSVG5x1b/projeto-final-atos
 # Sistema-Gestao-Projeto
